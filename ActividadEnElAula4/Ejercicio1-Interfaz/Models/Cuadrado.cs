@@ -13,14 +13,14 @@ namespace Ejercicio1_Interfaz.Models
             LadoUno = lado;
         }
 
-        public override double CalcularArea()
+        public double CalcularArea()
         {
             double area = 0;
             area = LadoUno * LadoUno;
             return area;
         }
 
-        public override double CalcularPerimetro()
+        public double CalcularPerimetro()
         {
             double perimetro = 0;
             perimetro = LadoUno * 4;

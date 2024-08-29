@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace Ejercicio1_Interfaz.Models
 {
-    public class Rectangulo : Figura
-    {
+    public class Rectangulo : Figura 
+    { 
         public double LadoUno { get; set; }
         public double LadoDos { get; set; }
         double area = 0;
         double perimetro = 0;
-        public override double CalcularArea()
+        public double CalcularArea()
         {
             area = LadoUno * LadoDos;
             return area;
         }
 
-        public override double CalcularPerimetro()
+        public double CalcularPerimetro()
         {
             return (LadoUno+LadoDos)*2;
         }
