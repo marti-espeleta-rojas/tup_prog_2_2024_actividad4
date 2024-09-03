@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ejercicio1_Interfaz.Models
 {
-    public class Circulo : Figura, IComparable
+    public class Circulo : IFigura, IComparable
     {
         public double Radio { get; private set; }
         public Circulo(double radio) 
@@ -20,22 +20,21 @@ namespace Ejercicio1_Interfaz.Models
         }
         public override string ToString()
         {
-            return $"Círculo: {CalcularArea():F2}";
+            return $"Círculo: Area: {CalcularArea():F2}\r\n Perímetro: {CalcularPerimetro():F2}";
         }
         public double CalcularPerimetro()
         {
-            throw new NotImplementedException();
+            double res = Math.PI * (Radio*2);
+            return res;
         }
 
         public int CompareTo(object obj)
         {
-            Circulo circulo = obj as Circulo;
-            double area = CalcularArea();
-            if (circulo != null)
-            {
-                return area.CompareTo(circulo.CalcularArea());
-            }
-            return 1;
+            IFigura figura = obj as IFigura;
+            double area = this.CalcularArea(); //polimorfismo --> método CalcularArea() de Circulo.
+            if (figura != null)
+                return area.CompareTo(figura.CalcularArea()); //polimorfismo --> método CalcularArea() de IFigura.
+            return 1; 
         }
     }
 }

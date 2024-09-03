@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ejercicio1_Interfaz.Models
 {
-    public interface Figura
+    public interface IFigura
     {
         double CalcularArea();
         double CalcularPerimetro();

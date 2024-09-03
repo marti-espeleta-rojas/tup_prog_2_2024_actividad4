@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ejercicio1_Interfaz.Models
 {
-    public class Rectangulo : Figura 
+    public class Rectangulo : IFigura, IComparable
     { 
         public double LadoUno { get; set; }
         public double LadoDos { get; set; }
@@ -31,7 +31,18 @@ namespace Ejercicio1_Interfaz.Models
 
         public override string ToString()
         {
-            return $"Rectangulo: {CalcularArea():F2}"; ;
+            return $"Rectangulo: Area: {CalcularArea():F2}\r\n Perímetro: {CalcularPerimetro():F2}";
+        }
+
+        public int CompareTo(object obj)
+        {
+            IFigura rect = obj as IFigura;
+            double area = CalcularArea();
+            if (rect != null)
+            {
+                return area.CompareTo(rect.CalcularArea());
+            }
+            return 1;
         }
     }
 }
