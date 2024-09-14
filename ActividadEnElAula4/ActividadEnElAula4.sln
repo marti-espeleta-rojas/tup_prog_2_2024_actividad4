@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio4-Mejorado", "Ejer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "II-Ejercicio1-Sort", "II-Ejercicio1-Sort\II-Ejercicio1-Sort.csproj", "{527295DA-1CD7-4F37-ADC9-29CDA1E627A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "II-Ejercicio2-BinarySearch", "II-Ejercicio2-BinarySearch\II-Ejercicio2-BinarySearch.csproj", "{12495D6B-CBC9-451C-B45D-F48CE5C40B28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{527295DA-1CD7-4F37-ADC9-29CDA1E627A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{527295DA-1CD7-4F37-ADC9-29CDA1E627A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{527295DA-1CD7-4F37-ADC9-29CDA1E627A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12495D6B-CBC9-451C-B45D-F48CE5C40B28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12495D6B-CBC9-451C-B45D-F48CE5C40B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12495D6B-CBC9-451C-B45D-F48CE5C40B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12495D6B-CBC9-451C-B45D-F48CE5C40B28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

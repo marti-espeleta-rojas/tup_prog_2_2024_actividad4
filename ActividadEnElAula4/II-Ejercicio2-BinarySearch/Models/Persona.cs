@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace II_Ejercicio1_Sort.Models
+namespace II_Ejercicio2_BinarySearch.Models
 {
-    public class Persona : IComparable
+    internal class Persona : IComparable
     {
         public string Nombre { get; private set; }
         public int DNI { get; private set; }
 
-        public Persona(string nombre, int dni) 
+        public Persona(string nombre, int dni)
         {
             DNI = dni;
             Nombre = nombre;
