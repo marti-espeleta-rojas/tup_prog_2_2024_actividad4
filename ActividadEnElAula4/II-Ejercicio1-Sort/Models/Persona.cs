@@ -11,7 +11,12 @@ namespace II_Ejercicio1_Sort.Models
         public string Nombre { get; private set; }
         public int DNI { get; private set; }
 
-        public Persona(int dni)
+        public Persona(string nombre, int dni) 
+        {
+            DNI = dni;
+            Nombre = nombre;
+        }
+        public Persona(int dni) //acá la sobrecarga de persona para poder acceder con sólo el dni.
         {
             DNI = dni;
         }
