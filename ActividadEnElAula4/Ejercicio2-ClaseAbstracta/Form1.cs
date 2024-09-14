@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Ejercicio1_Interfaz
+namespace Ejercicio2_ClaseAbstracta
 {
     public partial class Form1 : Form
     {
@@ -18,14 +18,13 @@ namespace Ejercicio1_Interfaz
         {
             InitializeComponent();
         }
-        
 
         private void btnPrueba_Click(object sender, EventArgs e)
         {
             ArrayList lista = new ArrayList() { new Circulo(5), new Rectangulo(6.4, 9), new Cuadrado(7.4), new Circulo(8.3), new Rectangulo(5.4, 3) };
             foreach (var v in lista)
             {
-                tbPrueba.Text += v.ToString()+"\r\n\r\n";
+                tbPrueba.Text += v.ToString() + "\r\n\r\n";
             }
 
 
@@ -35,9 +34,8 @@ namespace Ejercicio1_Interfaz
 
             foreach (var v in lista)
             {
-                tbPrueba.Text += v.ToString()+"\r\n\r\n";
+                tbPrueba.Text += v.ToString() + "\r\n\r\n";
             }
         }
     }
 }
-

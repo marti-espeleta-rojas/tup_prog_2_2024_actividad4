@@ -1,4 +1,4 @@
-﻿namespace Ejercicio1_Interfaz
+﻿namespace Ejercicio2_ClaseAbstracta
 {
     partial class Form1
     {
@@ -28,19 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnPrueba = new System.Windows.Forms.Button();
             this.tbPrueba = new System.Windows.Forms.TextBox();
+            this.btnPrueba = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnPrueba
-            // 
-            this.btnPrueba.Location = new System.Drawing.Point(395, 107);
-            this.btnPrueba.Name = "btnPrueba";
-            this.btnPrueba.Size = new System.Drawing.Size(75, 23);
-            this.btnPrueba.TabIndex = 0;
-            this.btnPrueba.Text = "Prueba";
-            this.btnPrueba.UseVisualStyleBackColor = true;
-            this.btnPrueba.Click += new System.EventHandler(this.btnPrueba_Click);
             // 
             // tbPrueba
             // 
@@ -48,16 +38,26 @@
             this.tbPrueba.Multiline = true;
             this.tbPrueba.Name = "tbPrueba";
             this.tbPrueba.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbPrueba.Size = new System.Drawing.Size(376, 210);
-            this.tbPrueba.TabIndex = 1;
+            this.tbPrueba.Size = new System.Drawing.Size(521, 265);
+            this.tbPrueba.TabIndex = 0;
+            // 
+            // btnPrueba
+            // 
+            this.btnPrueba.Location = new System.Drawing.Point(547, 126);
+            this.btnPrueba.Name = "btnPrueba";
+            this.btnPrueba.Size = new System.Drawing.Size(75, 23);
+            this.btnPrueba.TabIndex = 1;
+            this.btnPrueba.Text = "Prueba";
+            this.btnPrueba.UseVisualStyleBackColor = true;
+            this.btnPrueba.Click += new System.EventHandler(this.btnPrueba_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(478, 243);
-            this.Controls.Add(this.tbPrueba);
+            this.ClientSize = new System.Drawing.Size(634, 290);
             this.Controls.Add(this.btnPrueba);
+            this.Controls.Add(this.tbPrueba);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -67,8 +67,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnPrueba;
         private System.Windows.Forms.TextBox tbPrueba;
+        private System.Windows.Forms.Button btnPrueba;
     }
 }
 
